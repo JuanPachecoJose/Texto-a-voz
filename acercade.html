@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    
+    <title>Vottext</title>
+</head>
+<body>
+
+    <header>
+      <a href="index.html" class="header-logo-container">
+        <img src="assets/finalelogo.png" alt="Logo" id="logo">
+      </a>
+      <a href="index.html" class="tit-header"><h1>Vottext</h1></a>
+      
+        <div id="menu-icon">&#9776;</div>
+        <script src="burgermenu.js"></script>
+      
+      <nav>
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="acercade.html" class="nav-link">¿Cómo funciona Vottext?</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+      </nav>
+    </header>
+    <main class="index-main ">
+        <div id="inicio" class="pag-conten ">
+          <h2>¿Cómo funciona Vottext?</h2>
+            <p class="intro">El código de <a href="index.html">Vottext</a> está escrito en JavaScript y este código permite la reproducción de texto a voz y 
+              la descarga del discurso generado en formato de audio MP3.</p>
+                <ol>
+                    <li style="color: rgba(71, 66, 66, 0.904);">DOMContentLoaded Event:
+                    </li>
+                    <img src="assets/captura1.png" alt="">
+                    <p class="intro">Este evento se activa cuando la estructura HTML ha sido completamente 
+                      cargada y está lista para ser manipulada por JavaScript.</p>
+                <br>
+                <br>
+                    <li style="color: rgba(71, 66, 66, 0.904);">Obtención de elementos del DOM:</li>
+                    <img src="assets/captura2.png" alt="">
+                    <p class="intro">Aquí se obtienen referencias a tres elementos del DOM. txtInput es un input de texto, 
+                      trBtn es un botón de reproducción de texto a voz, y dlBtn es un botón de descarga.</p>
+                <br>
+                <br>
+                    <li style="color: rgba(71, 66, 66, 0.904);">Click Event en el Botón de Reproducción:</li>
+                    <img src="assets/captura3.png" alt="">
+                    <p class="intro">Cuando se hace clic en trBtn, se crea un nuevo objeto SpeechSynthesisUtterance con el contenido del input de texto. 
+                      Luego, se utiliza window.speechSynthesis.speak() para reproducir el mensaje de texto. Además, 
+                      se habilita el botón de descarga (dlBtn) al quitarle el atributo 'disabled'.</p>
+                
+                    <li style="color: rgba(71, 66, 66, 0.904);">Click Event en el Botón de Descarga:
+                    </li>
+                    <img src="assets/captura4.png" alt="">
+                    <p class="intro">Cuando se hace clic en dlBtn, se crea un nuevo objeto SpeechSynthesisUtterance con el contenido del input de texto. 
+                      Luego, se crea un Blob (objeto binario) a partir de ese mensaje y se genera una URL para el Blob. Se crea un elemento &lt;a&gt; (enlace), se le asigna la URL y un nombre de archivo para la descarga, 
+                      se añade al cuerpo del documento, se simula un clic en el enlace y, finalmente, se elimina el enlace del documento.</p>
+                </ol>                
+        </div>
+        
+        <div id="publi" class="pag-conten">
+          <ul class="pa-ads">
+            <li class="ads"><a href="https://www.smoke.com" ><img class="adimg" src="https://image.adsoftheworld.com/7a42cixk4c9t4z1yxmhr2sntppy3" alt=""></a></li>
+            <li class="ads"><a href="https://www.burgerking.es" ><img class="adimg" src="https://images.ecestaticos.com/-4pR1bs_wewV5RUY2gnkkvroH5s=/0x0:468x604/1200x1200/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F0c4%2F6c5%2Fe80%2F0c46c5e80b4a331ff25b751eb3299820.jpg" alt=""></a></li>
+            <li class="ads"><a href="https://www.volkswagen.es/es.html?adchan=sem&campaign=00789022_NC_TAT_OFO_BRE_RNG_RNG_RNG_ESP_NU_SEAH_PSEAC_TEAD_NU_GAD_GADW_CPA_NU_NU_NONE_A25-55_CXD_ES_EX_BRAD_PURE-PHD202212833571&adgroup=Marca_Exact&publisher=GOOGLE&adcr=volkswagen&adpl=GOOGLE&adlid=71700000064285832&country=ES&language=ES&gclsrc=aw.ds&gad_source=1&gclid=CjwKCAiA1-6sBhAoEiwArqlGPrHKcLf9RGf4fjYTT3bYFcBgD5yDAevgEZf4pLA9WviRR7lRg3GnWxoCxigQAvD_BwE " ><img class="adimg" src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2016/11/591559-esta-es-mejor-campana-publicidad-coches-ano.png?tf=1200x1200" alt=""></a></li>
+            <li class="ads"><a href="https://es.wikipedia.org/wiki/Blade_Runner_2049" ><img class="adimg" src="https://img.asmedia.epimg.net/resizer/jwvKss0Gp2wcrjhmOaDLJTo-naU=/1200x1200/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/GW6JTKRIXJMRFILIOFAWBTI37U.jpg" alt=""></a></li>
+            <li class="ads"><a href="https://www.xbox.com/es-ES/" ><img class="adimg" src="https://pbs.twimg.com/media/GCtywBGXsAAwj05.jpg" alt=""></a></li>
+            <li class="ads"><a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" ><img class="adimg" src="https://i.redd.it/0i7rzkctc2f01.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <h3>Vottext</h3><p>powered by <a href="contact.html">Lo xino</a>.</p>
+      </footer>
+  </body>
+  </html>
