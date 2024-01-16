@@ -337,3 +337,23 @@ footer a:hover{
   color:aliceblue;
   font-size: 20px;
 }
+
+#contactos{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.devsitos{
+  width: 20%;
+  margin: 15%;
+  margin-top: 2%;
+}
+
+@media (max-width: 888px) {
+
+  .devsitos p{
+    font-size: 60%;
+  }
+
+}
+
